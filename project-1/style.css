@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(63, 63, 238);
+    background-image: linear-gradient(43deg,rgb(0, 0, 0),rgb(173, 171, 171),rgb(255, 255, 255));
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(to top,rgb(254, 255, 255) 0%,rgb(0, 255, 255) 100%);
+    border-top: 1px solid rgb(156, 156, 156);
+    backdrop-filter: blur(15px);
+    box-shadow: rgb(35, 57, 77) 0px 20px 30px -10px;
+}
+.img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(30px) scale(0.5);
+    transform-origin: top;
+}
+.img-box img{
+    height: 90%;
+    width: 100%;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+.content .details{
+    color: #ae00ff;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-family: Algerian;
+}
+.content .details h2 span{
+    font-size: 0.5em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Bookman Old Style;
+}
+.sin{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+
+}
+.sin li{
+    list-style: none;
+    margin: 4px;
+}
+.sin li a{
+    width: 45px;
+    height: 45px;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),rgba(0,0,0,0.25);
+    transition: 0.5s;
+    border: 1px solid black;
+}
+.sin li a:hover{
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+@media only screen and (min-width: 768px){
+    [class*="card"]{
+        position: relative;
+    }
+}
