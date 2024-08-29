@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: Script MT;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+h1{
+    color: rgb(255, 208, 0);
+}
+h1 span{
+    color: rgb(177, 26, 236);
+}
+.back{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url('2k.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    
+}
+table{
+    font-family: Script MT;
+    border: 2px solid gray;
+    padding: 2px;
+    background: #fff;
+    color: black;
+}
+table tr{
+    border: 2px solid gray;
+}
+table tr th{
+    border: 2px solid gray;
+}
+button{
+    width: 100px;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+select{
+    width: 180px;
+}
+
+.newcont {
+    margin-top: 10px;
+    width: 70vh;
+}
+.newcont td {
+    border: 1px solid gray;
+    text-align: center;
+}
+.newcont td button {
+    background: red;
+    border-style: ridge;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 0;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    padding: 2px;
+    
+}
